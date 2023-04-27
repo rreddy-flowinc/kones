@@ -15,7 +15,7 @@ if file_to_rem.exists():
     file_to_rem.unlink()
 
 # Define a relative path to a file or directory
-relative_path = Path("source_pdf/ms10k.pdf")
+relative_path = Path("source_pdf/input.pdf")
 # Join the current directory with the relative path to create an absolute path
 absolute_path = current_directory / relative_path
 
@@ -46,5 +46,5 @@ def extractor_w_pdfplumber(input_path):
 
 
 
-extractor_w_pypdf(absolute_path)
-# extractor_w_pdfplumber(absolute_path)
+# extractor_w_pypdf(absolute_path)
+extractor_w_pdfplumber(absolute_path)
