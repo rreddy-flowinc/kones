@@ -1,66 +1,34 @@
-                                                                                    
-                                                                                    
-                                                                                    
-                                                                                    
-                                                                                    
-                                                                                    
-                                                                                    
-                                                                                    
-                                                                                    
-                                                                                    
-                                  uiet Venture II, L.P.                             
-                                B                                                   
-                                    Capital Call Notice                             
-                                Due                                                 
-                                   September 1, 2021                                
-                                                                                    
-                                                                                    
-                     Adrian  Bortiz                                                 
-                                                                                    
-       Current Capital Call Calculation                                             
-         Total Commitment                                        $  1,450,100.00    
-         % of Capital Call                                              10.00%      
-          Amount Due                                             $    145,010.00    
-                                                                                    
-                                                                                    
-       Unfunded Commitment                                                          
-         Commitment                                              $  1,450,100.00    
-         Previous capital calls                                  $  1,015,070.00    
-         Current capital call                                    $    145,010.00    
-          Remaining unfunded commitment                          $    290,020.00    
-                                                                                    
-       % of commitment called                                           80.00%      
-       % of commitment remaining to be called                           20.00%      
-                                                                                    
-                                                                                    
-                                                                                    
-                                                                                    
-                                                                                    
-                                                                                    
-                                                                                    
-                                  Wire Transfer Information                         
-                                                                                    
-       Amount Due:     $145,010.00                                                  
-       Bank Name:      First Republic Bank                                          
-                                                                                    
-       Account Name:    uiet Venture II LP                                          
-                       B                                                            
-       ABA Routing Number: - -                                                      
-                       432 010 312                                                  
-       SWIFT Code:     F   S                                                        
-                       HSJA 93                                                      
-       Account Number:                                                              
-                       312391293912                                                 
-       Ref/OBI:        CC -                                                         
-                         Adrian Bortiz                                              
-       Due Date:            ber 1, 202                                              
-                       Septem     1                                                 
-       INVESTORID#C1201                                                             
-                                      uiet Venture II, L.P.                         
-                                      B                                             
-                                     113  Street PMB                                
-                                       Market                                       
-                                    #27167                                          
-                                        San FranciscoCA                             
-                                         9                                          
-                                         4104                                       
+Buiet Venture II, L.P.
+Capital Call Notice
+Due  September 1, 2021
+Adrian Bortiz
+Current Capital Call Calculation
+Total Commitment $ 1,450,100.00
+% of Capital Call 10.00%
+Amount Due $ 145,010.00
+Unfunded Commitment
+Commitment $ 1,450,100.00
+Previous capital calls $ 1,015,070.00
+Current capital call $ 145,010.00
+Remaining unfunded commitment $ 290,020.00
+% of commitment called 80.00%
+% of commitment remaining to be called 20.00%
+Wire Transfer Information
+Amount Due:
+Bank Name:
+Account Name:$145,010.00 
+First Republic Bank 
+Buiet Venture II LP
+ABA Routing Number: 432-010-312
+SWIFT Code:
+Account Number:
+Ref/OBI:
+Due Date:FHSJAS93 
+312391293912 
+CC - Adrian Bortiz
+ Septem ber 1, 202 1
+INVESTORID#C1201
+Buiet Venture II, L.P.
+113 Market Street PMB 
+#27167 San Francisco CA 
+94104
