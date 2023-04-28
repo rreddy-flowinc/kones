@@ -9,6 +9,9 @@ pypdf = "*"
 pathlib = "*"
 pdfplumber = "*"
 python-dotenv = "*"
+jupyterlab = "*"
+semantic-kernel = "*"
+asyncio = "*"
 
 [dev-packages]
 

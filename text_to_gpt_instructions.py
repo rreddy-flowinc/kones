@@ -44,8 +44,13 @@ def ask_question2(question, inputtext):
 json_formatted = ask_question2("What are the wire instructions in this document", contents)
 instructions = json.loads(json_formatted)
 
-# {'Wire Transfer Information': {'Amount Due': '$145,010.00', 'Bank Name': 'First Republic Bank', 'Account Name': 'Buiet Venture II LP', 'ABA Routing Number': '432-010-312', 'SWIFT Code': '', 'Account Number': '312391293912', 'Ref/OBI': 'CC - Adrian Bortiz', 'Due Date': 'September 1, 2021'}}
+ask_question2("Give me the current total capital calls", contents)
 
+{'Wire Transfer Information': {'Amount Due': '$145,010.00', 'Bank Name': 'First Republic Bank', 'Account Name': 'Buiet Venture II LP', 'ABA Routing Number': '432-010-312', 'SWIFT Code': '', 'Account Number': '312391293912', 'Ref/OBI': 'CC - Adrian Bortiz', 'Due Date': 'September 1, 2021'}}
+{'Amount Due': '$145,010.00', 'Bank Name': 'First Republic Bank', 'Account Name': 'Buiet Venture II LP', 'ABA Routing Number': '432-010-312', 'SWIFT Code': None, 'Account Number': '312391293912', 'Ref/OBI': 'CC - Adrian Bortiz', 'Due Date': 'September 1, 2021'}
+{'Wire Transfer Information': {'Amount Due': '$145,010.00', 'Bank Name': 'First Republic Bank', 'Account Name': 'Buiet Venture II LP', 'ABA Routing Number': '432-010-312', 'SWIFT Code': None, 'Account Number': '312391293912', 'Ref/OBI': 'CC - Adrian Bortiz', 'Due Date': 'September 1, 2021'}}
+{'Amount Due': '$145,010.00', 'Bank Name': 'First Republic Bank', 'Account Name': 'Buiet Venture II LP', 'ABA Routing Number': '432-010-312', 'SWIFT Code': '', 'Account Number': '312391293912', 'Ref/OBI': 'CC - Adrian Bortiz', 'Due Date': 'September 1, 2021'}
+{'Wire Transfer Information': {'Amount Due': '$145,010.00', 'Bank Name': 'First Republic Bank', 'Account Name': 'Buiet Venture II LP', 'ABA Routing Number': '432-010-312', 'SWIFT Code': None, 'Account Number': '312391293912', 'Ref/OBI': 'CC - Adrian Bortiz', 'Due Date': 'September 1, 2021'}}
 # reply_content = completion.choices[0].message.content
 pdb.set_trace();
 
