@@ -38,8 +38,8 @@ class PdfExtractor:
     
     def run(self):
         self.clear_files_if_exists()
-        self.extractor_w_pypdf()
-        # self.extractor_w_pdfplumber()
+        # self.extractor_w_pypdf()
+        self.extractor_w_pdfplumber()
 
 
 pdf = PdfExtractor('input.pdf').run()
