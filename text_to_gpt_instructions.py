@@ -21,7 +21,7 @@ second_half = contents[(len(contents) // 2):]
 
 
 def assess_bucket_size(input):
-    GPT_TOTAL_WORD_COUNT = 750
+    GPT_TOTAL_WORD_COUNT = 500
     words = len(input.strip().split(" "))
     return words // (GPT_TOTAL_WORD_COUNT + 1)
 
@@ -60,7 +60,7 @@ def chunk_text(text):
         chunks = chunks[:bucket_size]
 
     input_prompts = [convert_chunk_to_user_input(c) for c in chunks[0:-1]]
-    last_prompt = convert_chunk_to_question(chunks[-1], "What are the wire instructions? Please respond in JSON format")
+    last_prompt = convert_chunk_to_question(chunks[-1], "What is the GROSS PROFIT for the year? Please respond in JSON format")
 
     return (input_prompts + [last_prompt])
 

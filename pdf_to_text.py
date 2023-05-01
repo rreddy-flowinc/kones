@@ -1,4 +1,4 @@
-from pypdf import PdfReader
+# from pypdf import PdfReader
 import pdfplumber
 from pathlib import Path
 
@@ -12,19 +12,19 @@ class PdfExtractor:
         if file_to_rem.exists():
             file_to_rem.unlink()
 
-    def extractor_w_pypdf(self):
-        reader = PdfReader(self.__input_pdf_path)
-        number_of_pages = len(reader.pages)
-
-        # save to a text file for later use
-        # copy the path where the script and pdf is placed
-        with open((self.__current_directory / Path("source_text/output.txt")), "x") as file1:
-            for page_num in range(number_of_pages):
-                page = reader.pages[page_num]
-                text = page.extract_text()        
-                file1.writelines(text)
-                continue
-        file1.close()
+    # def extractor_w_pypdf(self):
+    #     reader = PdfReader(self.__input_pdf_path)
+    #     number_of_pages = len(reader.pages)
+    #
+    #     # save to a text file for later use
+    #     # copy the path where the script and pdf is placed
+    #     with open((self.__current_directory / Path("source_text/output.txt")), "x") as file1:
+    #         for page_num in range(number_of_pages):
+    #             page = reader.pages[page_num]
+    #             text = page.extract_text()
+    #             file1.writelines(text)
+    #             continue
+    #     file1.close()
 
     def extractor_w_pdfplumber(self):
         with open((self.__current_directory / Path("source_text/output.txt")), "x") as file1:
@@ -42,4 +42,4 @@ class PdfExtractor:
         self.extractor_w_pdfplumber()
 
 
-pdf = PdfExtractor('input.pdf').run()
+pdf = PdfExtractor('ms10k.pdf').run()
