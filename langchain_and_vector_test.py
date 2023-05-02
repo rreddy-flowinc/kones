@@ -32,14 +32,11 @@ for i, page in enumerate(reader.pages):
 
 text_splitter = CharacterTextSplitter(        
     separator = "\n",
-    chunk_size = 2000,
-    chunk_overlap  = 300,
+    chunk_size = 1000,
+    chunk_overlap  = 200,
     length_function = len,
 )
 texts = text_splitter.split_text(raw_text)
-
-
-
 
 # build semantic index of documents
 embeddings = OpenAIEmbeddings()
@@ -48,24 +45,11 @@ docsearch = FAISS.from_texts(texts, embeddings)
 docsearch
 
 chain = load_qa_chain(ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0), chain_type="stuff")
-query = "what is microsoft's total revenue?"
-docs = docsearch.similarity_search(query)
+def generate_answer(chain, query):
+    docs = docsearch.similarity_search(query)
+    return chain.run(input_documents=docs, question=query)
 
-
-print(chain.run(input_documents=docs, question=query))
-
-
-query = "What was microsoft's gross profit?"
-docs = docsearch.similarity_search(query)
-print(chain.run(input_documents=docs, question=query))
-
-
-query = "Who is the CEO or Chief Executive Officer?"
-docs = docsearch.similarity_search(query)
-print(chain.run(input_documents=docs, question=query))
-
-
-
-query = "What is Microsoft's net profit margin? Net profit divided by total revenue."
-docs = docsearch.similarity_search(query)
-print(chain.run(input_documents=docs, question=query))
+print(generate_answer(chain, query="what is microsoft's total revenue?"))
+print(generate_answer(chain, query="What was microsoft's gross profit?"))
+print(generate_answer(chain, query="Who is the CEO or Chief Executive Officer?"))
+print(generate_answer(chain, query="What is Microsoft's net profit margin? Net profit divided by total revenue."))
