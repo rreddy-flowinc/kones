@@ -23,7 +23,7 @@ pinecone.init(
 
 index_name = "langchain-demo"
 # pinecone.create_index(index_name, dimension=1536,
-#                           metric="cosine", pods=1, pod_type="p1.x1")
+#                           metric="dotproduct", pods=1, pod_type="p1.x1")
 
 from langchain.document_loaders import PyPDFLoader
 import pdfplumber
