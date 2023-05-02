@@ -17,6 +17,7 @@ pandas = "*"
 pymilvus = "*"
 numpy = "*"
 tensorflow-hub = "*"
+faiss-cpu = "*"
 
 [dev-packages]
 

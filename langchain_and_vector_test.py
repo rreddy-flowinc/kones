@@ -2,10 +2,10 @@ import pdb
 from PyPDF2 import PdfReader
 from langchain.embeddings import HuggingFaceEmbeddings, OpenAIEmbeddings
 from langchain.text_splitter import CharacterTextSplitter
-from langchain.vectorstores import Milvus
+from langchain.vectorstores import Milvus, FAISS
 
 from langchain.chains.question_answering import load_qa_chain
-from langchain.llms import OpenAI
+from langchain.chat_models import ChatOpenAI
 
 from langchain.document_loaders import PyPDFLoader
 import pdfplumber
@@ -43,11 +43,11 @@ texts = text_splitter.split_text(raw_text)
 
 # build semantic index of documents
 embeddings = OpenAIEmbeddings()
-docsearch = Milvus.from_texts(texts, embeddings)
+docsearch = FAISS.from_texts(texts, embeddings)
 
 docsearch
 
-chain = load_qa_chain(OpenAI(model_name="gpt-3.5-turbo", temperature=0.1), chain_type="stuff")
+chain = load_qa_chain(ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0), chain_type="stuff")
 query = "what is microsoft's total revenue?"
 docs = docsearch.similarity_search(query)
 
