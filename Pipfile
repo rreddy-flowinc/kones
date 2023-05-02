@@ -10,6 +10,13 @@ pathlib = "*"
 python-dotenv = "*"
 semantic-kernel = "*"
 asyncio = "*"
+langchain = "*"
+tiktoken = "*"
+google-search-results = "*"
+pandas = "*"
+pymilvus = "*"
+numpy = "*"
+tensorflow-hub = "*"
 
 [dev-packages]
 
