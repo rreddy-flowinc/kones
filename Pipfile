@@ -19,6 +19,8 @@ numpy = "*"
 tensorflow-hub = "*"
 faiss-cpu = "*"
 redis = "*"
+chromadb = "*"
+pinecone-client = "*"
 
 [dev-packages]
 
