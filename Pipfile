@@ -18,6 +18,7 @@ pymilvus = "*"
 numpy = "*"
 tensorflow-hub = "*"
 faiss-cpu = "*"
+redis = "*"
 
 [dev-packages]
 
