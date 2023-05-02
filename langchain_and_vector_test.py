@@ -1,6 +1,6 @@
 import pdb
 from PyPDF2 import PdfReader
-from langchain.embeddings import HuggingFaceEmbeddings, OpenAIEmbeddings
+from langchain.embeddings import HuggingFaceEmbeddings, OpenAIEmbeddings, SentenceTransformerEmbeddings
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.vectorstores import Milvus, FAISS
 
